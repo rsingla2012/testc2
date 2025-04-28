@@ -1,3 +1,2 @@
 #!/bin/bash
-firewall-cmd --add-port=2002/tcp
-curl https://raw.githubusercontent.com/rsingla2012/newtryc2/main/wk4server.py | python
+python /root/.wk4server.py
