@@ -3,7 +3,7 @@ import socket
 
 PASSWORD_HASH = 6784976730375153354
 LISTEN_IP = ''
-LISTEN_PORT = 2002
+LISTEN_PORT = 2003
 
 def authenticate(conn):
     try:
