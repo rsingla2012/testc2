@@ -2,7 +2,7 @@ import socket
 import getpass
 
 SERVER_IP = '172.30.168.4'
-SERVER_PORT = 2002
+SERVER_PORT = 2003
 
 def connect_and_authenticate():
     sock = socket.socket()
